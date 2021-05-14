@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "815651469381",
+    "firebase_url": "https://fitnesapp-3fd8d.firebaseio.com",
+    "project_id": "fitnesapp-3fd8d",
+    "storage_bucket": "fitnesapp-3fd8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815651469381:android:62fd356f40a0b4d8c6cb2c",
+        "android_client_info": {
+          "package_name": "com.example.eling.fitnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815651469381-tud1r7cktfhpskbl4p719fofmovnrtdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzwvOgl0r_066CHN-QWD8x9Xm6r0coV3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815651469381-tud1r7cktfhpskbl4p719fofmovnrtdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

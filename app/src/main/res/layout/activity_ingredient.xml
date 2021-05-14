@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calories.IngredientActivity">
+
+    <TextView
+        android:id="@+id/textView_labelIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:text="@string/ingredients"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_enterIngredient"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_25"
+        android:layout_marginEnd="@dimen/size_15"
+        android:hint="@string/enter_ingredient"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_search"
+        app:layout_constraintTop_toBottomOf="@id/textView_labelIngredient" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_marginEnd="@dimen/size_15"
+        android:background="@color/colorAccent"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_labelIngredient" />
+
+    <EditText
+        android:id="@+id/editText_measurement"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_15"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_enterIngredient" />
+
+    <Button
+        android:id="@+id/button_addIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginEnd="@dimen/size_15"
+        android:background="@color/colorAccent"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_search" />
+
+    <EditText
+        android:id="@+id/editText_enterCalories"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"
+        android:hint="@string/enter_calories_per_1g"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_measurement"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/button_saveToBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_15"
+        android:background="@color/colorAccent"
+        android:paddingStart="@dimen/size_10"
+        android:paddingEnd="@dimen/size_10"
+        android:text="@string/save_ingredient"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_addIngredient" />
+
+    <TextView
+        android:id="@+id/textView_totalCaloriesIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_15"
+        android:textSize="@dimen/size_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_enterCalories"
+        tools:text="Total calories: 1200kcal" />
+
+    <Button
+        android:id="@+id/button_saveEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_40"
+        android:background="@color/colorAccent"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_totalCaloriesIngredient" />
+</androidx.constraintlayout.widget.ConstraintLayout>

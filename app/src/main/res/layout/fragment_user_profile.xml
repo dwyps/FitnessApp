@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.UserProfileFragment">
+
+    <TextView
+        android:id="@+id/textView_helloUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        tools:text="Hello user"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_100"
+        android:clickable="false"
+        android:textSize="@dimen/size_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_helloUser"
+        app:layout_constraintRight_toLeftOf="@id/imageButton_editUsername"
+        tools:text="Username" />
+
+
+    <EditText
+        android:id="@+id/editText_usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_100"
+        android:clickable="false"
+        android:textSize="@dimen/size_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_helloUser"
+        app:layout_constraintRight_toLeftOf="@id/imageButton_editUsername"
+        tools:text="Username"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/imageButton_editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_30"
+        android:background="@color/white"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView_usernameProfile"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_saveUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_30"
+        android:background="@color/white"
+        android:src="@drawable/ic_done_black_24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/editText_usernameProfile"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_30"
+        android:text="@string/logout"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@id/textView_totalTrainings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_40"
+        android:text="@string/statistics"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_usernameProfile" />
+
+    <TextView
+        android:id="@+id/textView_totalCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_30"
+        android:textSize="@dimen/size_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_statistics"
+        tools:text="Total caloriesList last 30 days: 120000kcal"
+        />
+
+
+    <TextView
+        android:id="@+id/textView_totalTrainings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_totalCalories"
+        tools:text="Total trainings last 7 days: 3"
+        android:textSize="@dimen/size_15"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

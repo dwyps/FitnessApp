@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".training.TrainingDetailsActivity">
+
+    <TextView
+        android:id="@+id/textView_trainingDateDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="25.08.2019" />
+
+    <TextView
+        android:id="@+id/textView_TrainingDetailsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_10"
+        android:textSize="@dimen/size_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_trainingDateDetails"
+        tools:text="15 push ups \n30 squats \n15 jumping jacks "
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/editText_TrainingDetailsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_10"
+        android:textSize="@dimen/size_25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_trainingDateDetails"
+        tools:text="15 push ups \n30 squats \n15 jumping jacks "
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/button_updateTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/update_training"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_TrainingDetailsDetails"
+        android:paddingStart="@dimen/size_10"
+        android:paddingEnd="@dimen/size_10"/>
+
+    <Button
+        android:id="@+id/button_saveUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_TrainingDetailsDetails"
+        android:visibility="gone"
+        android:paddingStart="@dimen/size_10"
+        android:paddingEnd="@dimen/size_10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
